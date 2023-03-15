@@ -136,6 +136,7 @@ li {
   line-height: 19px;
   text-decoration-line: underline;
   color: #1688f8;
+  cursor: pointer;
 }
 .cardRevews .contentCard .title span:nth-of-type(2) {
   font-family: "Roboto";
@@ -281,6 +282,7 @@ li {
   line-height: 16px;
   text-decoration-line: underline;
   color: #1688f8;
+  cursor: pointer;
 }
 .cardTrip .moreInfo span:nth-of-type(2) {
   font-family: "Roboto";
@@ -290,6 +292,7 @@ li {
   line-height: 14px;
   text-decoration-line: underline;
   color: #096bff;
+  cursor: pointer;
 }
 .cardTrip .moreInfo img {
   max-width: 100%;
