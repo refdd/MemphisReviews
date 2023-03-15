@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>memhpsTours</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <div
+      class="headerSection d-flex justify-content-center align-items-center py-4"
+    >
+      <span>Egypt Tour Reviews</span>
+    </div>
+    <div class="container">
+      <div class="reviewsSection py-md-3 px-md-3">
+        <div class="row">
+          <div class="col-12 col-md-4 border_r_review">
+            <div class="rating_Stars p-2">
+              <!-- rating -->
+              <div class="rating d-flex flex-column gap-3 align-items-center">
+                <div class="number">4.8</div>
+                <div class="stars d-flex align-items-center">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <div class="reviesNumber">
+                  <span>4.8</span> out of 5 based on <span>(1668)</span> reviews
+                </div>
+              </div>
+              <div class="starProscing py-3">
+                <div class="processing">
+                  <div class="row gx-1 align-items-center">
+                    <div class="col-4">
+                      <div class="d-flex align-items-center gap-1">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <span class="textStar"> 5 Star</span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="pros_box">
+                        <span class="pros fullRating"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gx-1 mt-3 align-items-center">
+                    <div class="col-4">
+                      <div class="d-flex align-items-center gap-1">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <span class="textStar"> 4 Star</span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="pros_box">
+                        <span class="pros ratingTow"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gx-1 mt-3 align-items-center">
+                    <div class="col-4">
+                      <div class="d-flex align-items-center gap-1">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <span class="textStar"> 3 Star</span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="pros_box">
+                        <span class="pros ratingThree"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gx-1 mt-3 align-items-center">
+                    <div class="col-4">
+                      <div class="d-flex align-items-center gap-1">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <span class="textStar"> 2 Star</span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="pros_box">
+                        <span class="pros ratingFore"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gx-1 mt-3 align-items-center">
+                    <div class="col-4">
+                      <div class="d-flex align-items-center gap-1">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <span class="textStar"> 1 Star</span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="pros_box">
+                        <span class="pros ratingFive"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- revies comment -->
+          <div class="col-12 col-md-8">
+            <div
+              class="reviewsContainer mt-4 px-2 d-flex flex-column gap-3 align-items-center"
+            >
+              <div
+                class="cardRevews d-flex flex-column gap-3 justify-content-center p-3"
+              >
+                <div class="starscontainer d-flex align-items-center">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <!-- titel and duration -->
+                <div class="contentCard">
+                  <div
+                    class="title d-flex flex-column flex-md-row align-items-md-center"
+                  >
+                    <span>Cairo and Nile Adventure,</span>
+                    <span>Stayed 5 nights - 1\19\2023</span>
+                  </div>
+                  <div class="author">
+                    <span>Beale Street</span>
+                  </div>
+                </div>
+                <!-- description -->
+                <div class="desc">
+                  <span>
+                    What a great tour! Perfect amount of time to learn about the
+                    rich history Beale street has to offer. Out tour gui.
+                  </span>
+                </div>
+              </div>
+              <div
+                class="cardRevews d-flex flex-column gap-3 justify-content-center p-3"
+              >
+                <div class="starscontainer d-flex align-items-center">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <!-- titel and duration -->
+                <div class="contentCard">
+                  <div
+                    class="title d-flex flex-column flex-md-row align-items-md-center"
+                  >
+                    <span>Cairo and Nile Adventure,</span>
+                    <span>Stayed 5 nights - 1\19\2023</span>
+                  </div>
+                  <div class="author">
+                    <span>Beale Street</span>
+                  </div>
+                </div>
+                <!-- description -->
+                <div class="desc">
+                  <span>
+                    What a great tour! Perfect amount of time to learn about the
+                    rich history Beale street has to offer. Out tour gui.
+                  </span>
+                </div>
+              </div>
+              <div
+                class="cardRevews d-flex flex-column gap-3 justify-content-center p-3"
+              >
+                <div class="starscontainer d-flex align-items-center">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <!-- titel and duration -->
+                <div class="contentCard">
+                  <div
+                    class="title d-flex flex-column flex-md-row align-items-md-center"
+                  >
+                    <span>Cairo and Nile Adventure,</span>
+                    <span>Stayed 5 nights - 1\19\2023</span>
+                  </div>
+                  <div class="author">
+                    <span>Beale Street</span>
+                  </div>
+                </div>
+                <!-- description -->
+                <div class="desc">
+                  <span>
+                    What a great tour! Perfect amount of time to learn about the
+                    rich history Beale street has to offer. Out tour gui.
+                  </span>
+                </div>
+              </div>
+              <div
+                class="cardRevews d-flex flex-column gap-3 justify-content-center p-3"
+              >
+                <div class="starscontainer d-flex align-items-center">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <!-- titel and duration -->
+                <div class="contentCard">
+                  <div
+                    class="title d-flex flex-column flex-md-row align-items-md-center"
+                  >
+                    <span>Cairo and Nile Adventure,</span>
+                    <span>Stayed 5 nights - 1\19\2023</span>
+                  </div>
+                  <div class="author">
+                    <span>Beale Street</span>
+                  </div>
+                </div>
+                <!-- description -->
+                <div class="desc">
+                  <span>
+                    What a great tour! Perfect amount of time to learn about the
+                    rich history Beale street has to offer. Out tour gui.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-4">
+              <div class="pagination_review px-2 mx-2">
+                <div class="row align-items-center">
+                  <div class="col-3">
+                    <div class="previous d-flex align-items-center gap-2">
+                      <i class="fa-solid fa-chevron-left"></i>
+                      <span>Previous</span>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div
+                      class="pages d-flex align-items-center justify-content-between"
+                    >
+                      <span class="active">1</span>
+                      <span>2</span>
+                      <span>3</span>
+                      <span>...</span>
+                      <span>9</span>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="next d-flex align-items-center gap-2">
+                      <span>Next</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+        </div>
+      </div>
+    </div>
+    <!-- trip advisor -->
+    <div class="container mt-5 mb-4">
+      <div
+        class="tripAdisor py-3 d-flex flex-column flex-md-row gap-3 align-items-center justify-content-md-between px-md-4"
+      >
+        <div
+          class="d-flex flex-column gap-3 align-items-center align-items-md-start"
+        >
+          <div class="advisorImg">
+            <img src="assets/image/tripadvisor-ar21 1.svg" alt="" />
+          </div>
+          <div class="ratingAdvisor d-flex align-items-center">
+            <span>4.9</span>
+            <div class="d-flex align-items-center">
+              <i class="fa-sharp fa-solid fa-star"></i>
+              <i class="fa-sharp fa-solid fa-star"></i>
+              <i class="fa-sharp fa-solid fa-star"></i>
+              <i class="fa-sharp fa-solid fa-star"></i>
+              <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            <span> (130 reviews)</span>
+          </div>
+        </div>
+
+        <div class="btnWReview">
+          <button>Write a review</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- review trip advisor -->
+    <div class="container mb-5 pb-5">
+      <div class="row">
+        <div class="col-12">
+          <section
+            id="new-product"
+            class="splide"
+            aria-label="Splide Basic HTML Example"
+          >
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+              </button>
+              <button class="splide__arrow splide__arrow--next">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+              </button>
+            </div>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="cardTrip p-3 py-4 d-flex flex-column gap-3">
+                    <!-- title and star -->
+                    <div class="title d-flex flex-column gap-2">
+                      <span>Carol Smith</span>
+                      <div class="star d-flex align-items-center">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      <span>Unique route to Egypt</span> - This is my second
+                      trip to Egypt and it was really unique. It was definitely
+                      off the beaten track. We really enjoyed the different
+                      sights we saw on this tour! Highly recommend this trip.
+                    </div>
+                    <!-- duration -->
+                    <div class="duration">11\19\2023</div>
+                    <div class="moreInfo d-flex flex-column gap-2">
+                      <span>See more</span>
+                      <span>Posted on</span>
+                      <img src="assets/image/image 1.svg" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardTrip p-3 py-4 d-flex flex-column gap-3">
+                    <!-- title and star -->
+                    <div class="title d-flex flex-column gap-2">
+                      <span>Carol Smith</span>
+                      <div class="star d-flex align-items-center">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      <span>Unique route to Egypt</span> - This is my second
+                      trip to Egypt and it was really unique. It was definitely
+                      off the beaten track. We really enjoyed the different
+                      sights we saw on this tour! Highly recommend this trip.
+                    </div>
+                    <!-- duration -->
+                    <div class="duration">11\19\2023</div>
+                    <div class="moreInfo d-flex flex-column gap-2">
+                      <span>See more</span>
+                      <span>Posted on</span>
+                      <img src="assets/image/image 1.svg" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardTrip p-3 py-4 d-flex flex-column gap-3">
+                    <!-- title and star -->
+                    <div class="title d-flex flex-column gap-2">
+                      <span>Carol Smith</span>
+                      <div class="star d-flex align-items-center">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      <span>Unique route to Egypt</span> - This is my second
+                      trip to Egypt and it was really unique. It was definitely
+                      off the beaten track. We really enjoyed the different
+                      sights we saw on this tour! Highly recommend this trip.
+                    </div>
+                    <!-- duration -->
+                    <div class="duration">11\19\2023</div>
+                    <div class="moreInfo d-flex flex-column gap-2">
+                      <span>See more</span>
+                      <span>Posted on</span>
+                      <img src="assets/image/image 1.svg" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardTrip p-3 py-4 d-flex flex-column gap-3">
+                    <!-- title and star -->
+                    <div class="title d-flex flex-column gap-2">
+                      <span>Carol Smith</span>
+                      <div class="star d-flex align-items-center">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      <span>Unique route to Egypt</span> - This is my second
+                      trip to Egypt and it was really unique. It was definitely
+                      off the beaten track. We really enjoyed the different
+                      sights we saw on this tour! Highly recommend this trip.
+                    </div>
+                    <!-- duration -->
+                    <div class="duration">11\19\2023</div>
+                    <div class="moreInfo d-flex flex-column gap-2">
+                      <span>See more</span>
+                      <span>Posted on</span>
+                      <img src="assets/image/image 1.svg" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardTrip p-3 py-4 d-flex flex-column gap-3">
+                    <!-- title and star -->
+                    <div class="title d-flex flex-column gap-2">
+                      <span>Carol Smith</span>
+                      <div class="star d-flex align-items-center">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      <span>Unique route to Egypt</span> - This is my second
+                      trip to Egypt and it was really unique. It was definitely
+                      off the beaten track. We really enjoyed the different
+                      sights we saw on this tour! Highly recommend this trip.
+                    </div>
+                    <!-- duration -->
+                    <div class="duration">11\19\2023</div>
+                    <div class="moreInfo d-flex flex-column gap-2">
+                      <span>See more</span>
+                      <span>Posted on</span>
+                      <img src="assets/image/image 1.svg" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardTrip p-3 py-4 d-flex flex-column gap-3">
+                    <!-- title and star -->
+                    <div class="title d-flex flex-column gap-2">
+                      <span>Carol Smith</span>
+                      <div class="star d-flex align-items-center">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      <span>Unique route to Egypt</span> - This is my second
+                      trip to Egypt and it was really unique. It was definitely
+                      off the beaten track. We really enjoyed the different
+                      sights we saw on this tour! Highly recommend this trip.
+                    </div>
+                    <!-- duration -->
+                    <div class="duration">11\19\2023</div>
+                    <div class="moreInfo d-flex flex-column gap-2">
+                      <span>See more</span>
+                      <span>Posted on</span>
+                      <img src="assets/image/image 1.svg" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="cardTrip p-3 py-4 d-flex flex-column gap-3">
+                    <!-- title and star -->
+                    <div class="title d-flex flex-column gap-2">
+                      <span>Carol Smith</span>
+                      <div class="star d-flex align-items-center">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      <span>Unique route to Egypt</span> - This is my second
+                      trip to Egypt and it was really unique. It was definitely
+                      off the beaten track. We really enjoyed the different
+                      sights we saw on this tour! Highly recommend this trip.
+                    </div>
+                    <!-- duration -->
+                    <div class="duration">11\19\2023</div>
+                    <div class="moreInfo d-flex flex-column gap-2">
+                      <span>See more</span>
+                      <span>Posted on</span>
+                      <img src="assets/image/image 1.svg" alt="" />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

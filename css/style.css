@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --main-color: #10cab7;
+  --secondary-color: #2c4755;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+  --main-duration: 0.5s;
+}
+/* End Variables */
+/* start global rouls css */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+  text-transform: none !important;
+}
+button {
+  border: none !important;
+  background-color: inherit !important;
+}
+ul {
+  padding-left: 0 !important;
+}
+li {
+  list-style: none !important;
+}
+/* header section */
+.headerSection span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #3d3d3d;
+}
+.reviewsSection {
+  background: #fbfbfb;
+}
+.rating .number {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 82px;
+  color: #f5a31b;
+}
+.rating .stars {
+  font-size: 22px;
+  color: #f5a31b;
+}
+.rating .reviesNumber {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #0a2b4b;
+  text-align: center;
+}
+.rating .reviesNumber span {
+  font-weight: 700;
+}
+.processing .pros_box {
+  background: #ffffff;
+  border: 1px solid #c0c0c0;
+  height: 18px;
+  position: relative;
+}
+.processing .pros_box .pros {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0a2b4b;
+  height: 100%;
+}
+.fullRating {
+  width: 92%;
+}
+.ratingTow {
+  width: 40%;
+}
+.ratingThree {
+  width: 25%;
+}
+.ratingFore {
+  width: 16%;
+}
+.ratingFive {
+  width: 4%;
+}
+.processing .textStar {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d3d3d;
+}
+.processing .form-check-input {
+  width: 30px;
+  height: 30px;
+  margin-top: 0;
+  border: 1px solid #3d3d3d;
+  border-radius: 0;
+}
+.form-check-input:focus {
+  border: 1px solid #3d3d3d;
+  box-shadow: none;
+}
+.form-check-input:checked {
+  background-color: #ffffff;
+}
+.form-check-input:checked[type="checkbox"] {
+  background-image: url(../assets/image/rightSing.svg);
+  background-size: 20px;
+}
+.cardRevews {
+  background: #ffffff;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+}
+.cardRevews i {
+  font-size: 22;
+  color: #f5a31b;
+}
+.cardRevews .contentCard .title span:nth-of-type(1) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #1688f8;
+}
+.cardRevews .contentCard .title span:nth-of-type(2) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #3d3d3d;
+}
+.cardRevews .contentCard .author {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d3d3d;
+}
+.cardRevews .desc span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.pagination_review {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+}
+.previous {
+}
+.previous i,
+.next i {
+  font-size: 20px;
+  color: #a8a8a8;
+}
+.next i {
+  color: #007eec;
+}
+.previous span,
+.next span {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  color: #a8a8a8;
+}
+.next span {
+  color: #007eec;
+}
+.pages span {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  color: #007eec;
+  padding: 14px;
+}
+.pages span.active {
+  font-weight: 700;
+  border: 1px solid #898989;
+}
+.tripAdisor {
+  background: #ffffff;
+  border: 1px solid #bababa;
+}
+
+.ratingAdvisor {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.ratingAdvisor i {
+  font-size: 20px;
+  color: #fcc40f;
+}
+.tripAdisor .btnWReview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 164px;
+  height: 55px;
+  background: #00b087;
+  border-radius: 8px;
+}
+.tripAdisor .btnWReview button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.cardTrip {
+  background: #ffffff;
+  border: 1px solid #ececec;
+}
+.cardTrip .title span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d3d3d;
+}
+.cardTrip .title i {
+  color: #fcc40f;
+}
+.cardTrip .desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d3d3d;
+}
+.cardTrip .desc span {
+  font-weight: 700;
+}
+.cardTrip .duration {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #b3b3b3;
+}
+.cardTrip .moreInfo span:nth-of-type(1) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #1688f8;
+}
+.cardTrip .moreInfo span:nth-of-type(2) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #096bff;
+}
+.cardTrip .moreInfo img {
+  max-width: 100%;
+  width: 104px;
+  height: 22px;
+}
+
+.splide__arrow:disabled {
+  background-color: red;
+}
+.splide__arrow {
+  font-size: 30px;
+  top: 115%;
+}
+@media only screen and (max-width: 786px) {
+  #new-product .splide__list {
+    padding: 0 20% 0 0 !important;
+  }
+}
+@media only screen and (min-width: 786px) {
+  .rating .number {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 117px;
+  }
+  .rating .stars {
+    font-size: 26px;
+  }
+  .rating .reviesNumber {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 26px;
+  }
+  .border_r_review {
+    border-right: 2px solid #dcdcdc;
+  }
+  .cardRevews .contentCard .title span:nth-of-type(1) {
+    font-size: 18px;
+  }
+  .cardRevews .contentCard .author {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3d3d3d;
+    margin-top: 10px;
+  }
+  .previous span,
+  .next span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .pages span.active {
+    font-size: 20px;
+  }
+  .cardTrip .title span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .splide__arrow {
+    font-size: 30px;
+    top: 49%;
+  }
+  .splide__arrow--prev {
+    left: -2em;
+  }
+  .splide__arrow--next {
+    right: -2em;
+  }
+}
