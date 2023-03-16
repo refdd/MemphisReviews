@@ -1,0 +1,261 @@
+body {
+  background-color: #fbfbfb;
+}
+.thankYou {
+  background: #ffffff;
+  border: 1px solid #c0c0c0;
+  border-radius: 20px;
+}
+.checkmark {
+  top: 32%;
+  left: 62%;
+  transform: translate(-50%, 50%);
+  width: 41px;
+  height: 41px;
+}
+.thankYou .Name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 141.19%;
+  color: #3d3d3d;
+}
+.thankYou .desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 141.19%;
+  color: #3d3d3d;
+}
+.thankYou .desc span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 141.19%;
+  color: #3d3d3d;
+}
+.HeaderReview {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d3d3d;
+}
+.ratingWeb .boxRating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 10px;
+  gap: 10px;
+  width: 167px;
+  height: 55px;
+  background: #ffffff;
+  border: 1px solid #bebebe;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+.ratingWeb .boxRating.active {
+  background: #00b087;
+}
+.ratingWeb .boxRating.active span {
+  color: #fff;
+}
+.ratingWeb .boxRating span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #3d3d3d;
+}
+.saveSection .header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 141.19%;
+  color: #1688f8;
+  text-decoration-line: underline;
+}
+.saveSection .desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 141.19%;
+  color: #3d3d3d;
+}
+/* check box */
+
+:root {
+  --primary: #c5e1a5;
+  --easing: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --duration: 100ms;
+}
+
+.checkbox {
+  display: inline-block;
+  position: relative;
+  padding: 20px 0 20px 60px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.text {
+  display: inline-block;
+  transition: transform var(--duration) var(--easing);
+  user-select: none;
+}
+
+.checkbox:active .text {
+  transform: scale(0.9);
+}
+
+.checkbox .icon {
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.checkbox .icon::before,
+.checkbox .icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.checkbox .icon::before {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background: var(--primary);
+  transition: background var(--duration) var(--easing);
+}
+
+.checkbox .icon::after {
+  border: 3px solid transparent;
+
+  width: 12px;
+  height: 25px;
+  border-right-color: #4d7c16;
+  border-bottom-color: #4d7c16;
+  transition: width var(--duration) ease-in,
+    height var(--duration) ease-out var(--duration),
+    border-color var(--easing) var(--duration);
+  bottom: 7px;
+  left: 12px;
+  border-radius: 4px;
+  transform-origin: bottom left;
+  animation-duration: 1s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changewidth {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 12px;
+  }
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 25px;
+  }
+  from {
+    border-color: transparent;
+  }
+
+  to {
+    border-right-color: #4d7c16;
+    border-bottom-color: #4d7c16;
+  }
+}
+
+#checkbox:checked + .checkbox .icon::before {
+  background: var(--primary);
+}
+@media only screen and (min-width: 786px) {
+  .checkmark {
+    left: 54%;
+  }
+  .thankYou .Name {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 141.19%;
+  }
+  .thankYou .desc {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 141.19%;
+    color: #3d3d3d;
+  }
+  .thankYou {
+    background: #ffffff;
+    border: 1px solid #c0c0c0;
+    border-radius: 20px;
+    width: 78%;
+    margin: 0 auto;
+  }
+  .thankYou .desc span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 141.19%;
+    color: rgb(61, 61, 61);
+  }
+  .ratingWeb {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .HeaderReview {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .ratingWeb .boxRating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 10px;
+    gap: 10px;
+    width: 213px;
+    height: 55px;
+    background: #ffffff;
+    border: 1px solid #bebebe;
+    border-radius: 10px;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  .ratingWeb .boxRating span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .saveSection .header {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 141.19%;
+  }
+  .saveSection .desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 141.19%;
+  }
+}
