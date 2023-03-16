@@ -7,8 +7,8 @@ body {
   border-radius: 20px;
 }
 .checkmark {
-  top: 32%;
-  left: 62%;
+  top: -3%;
+  left: 91%;
   transform: translate(-50%, 50%);
   width: 41px;
   height: 41px;
@@ -138,15 +138,19 @@ body {
   border-radius: 100%;
   background: var(--primary);
   transition: background var(--duration) var(--easing);
+  border: 3px solid #fff;
 }
-
+.imgMail i {
+  font-size: 106px;
+  color: #00b087;
+}
 .checkbox .icon::after {
   border: 3px solid transparent;
 
   width: 12px;
   height: 25px;
-  border-right-color: #4d7c16;
-  border-bottom-color: #4d7c16;
+  border-right-color: #00b087;
+  border-bottom-color: #00b087;
   transition: width var(--duration) ease-in,
     height var(--duration) ease-out var(--duration),
     border-color var(--easing) var(--duration);
@@ -159,7 +163,27 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
+.fa-heart.heart1 {
+  top: 7px;
+  left: 45%;
+  font-size: 8px;
+  transform: rotate(-26deg);
+  color: #fff;
+}
+.fa-heart.heart2 {
+  top: 8px;
+  left: 54%;
+  font-size: 8px;
+  transform: rotate(32deg);
+  color: #fff;
+}
+.fa-heart.heart3 {
+  top: 36px;
+  left: 51%;
+  font-size: 8px;
+  transform: rotate(-37deg);
+  color: #fff;
+}
 @keyframes changewidth {
   from {
     width: 0;
@@ -180,17 +204,34 @@ body {
   }
 
   to {
-    border-right-color: #4d7c16;
-    border-bottom-color: #4d7c16;
+    border-right-color: #00b087;
+    border-bottom-color: #00b087;
   }
 }
 
 #checkbox:checked + .checkbox .icon::before {
   background: var(--primary);
 }
+.layourblur {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #00b08708, #fff);
+  animation: gradient 3s ease-in-out infinite;
+}
+@keyframes gradient {
+  0% {
+    background: linear-gradient(to bottom, #00b08708, #fff);
+  }
+
+  100% {
+    background: linear-gradient(to bottom, #00b08708, #fff0);
+  }
+}
 @media only screen and (min-width: 786px) {
   .checkmark {
-    left: 54%;
+    left: 94%;
   }
   .thankYou .Name {
     font-weight: 600;
