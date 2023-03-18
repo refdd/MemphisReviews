@@ -307,6 +307,15 @@ li {
   font-size: 30px;
   top: 115%;
 }
+.seeMore {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #1688f8;
+}
 @media only screen and (max-width: 786px) {
   #new-product .splide__list {
     padding: 0 20% 0 0 !important;
@@ -317,6 +326,11 @@ li {
     font-weight: 700;
     font-size: 100px;
     line-height: 117px;
+  }
+  .seeMore {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
   }
   .rating .stars {
     font-size: 26px;

@@ -164,25 +164,55 @@ body {
   animation-direction: alternate;
 }
 .fa-heart.heart1 {
+  top: 21px;
+  left: 45%;
+  font-size: 8px;
+  transform: rotate(-26deg);
+  color: #fff;
+  opacity: 0;
+  transition: ease-out 0.5s;
+}
+.fa-heart.heart1.active {
   top: 7px;
   left: 45%;
   font-size: 8px;
   transform: rotate(-26deg);
   color: #fff;
+  opacity: 1;
 }
 .fa-heart.heart2 {
+  top: 23px;
+  left: 54%;
+  font-size: 8px;
+  transform: rotate(32deg);
+  color: #fff;
+  opacity: 0;
+  transition: ease-out 0.5s;
+}
+.fa-heart.heart2.active {
   top: 8px;
   left: 54%;
   font-size: 8px;
   transform: rotate(32deg);
   color: #fff;
+  opacity: 1;
 }
 .fa-heart.heart3 {
+  top: 27px;
+  left: 51%;
+  font-size: 8px;
+  transform: rotate(-37deg);
+  color: #fff;
+  opacity: 0;
+  transition: ease-out 0.5s;
+}
+.fa-heart.heart3.active {
   top: 36px;
   left: 51%;
   font-size: 8px;
   transform: rotate(-37deg);
   color: #fff;
+  opacity: 1;
 }
 @keyframes changewidth {
   from {
@@ -217,16 +247,16 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, #00b08708, #fff);
-  animation: gradient 3s ease-in-out infinite;
+  background: linear-gradient(to bottom right, #00b08708, #fff);
+  animation: gradient 2s ease-in-out infinite;
 }
 @keyframes gradient {
   0% {
-    background: linear-gradient(to bottom, #00b08708, #fff);
+    background-image: linear-gradient(to bottom right, #00b08708, #fff);
   }
 
   100% {
-    background: linear-gradient(to bottom, #00b08708, #fff0);
+    background: linear-gradient(to bottom right, #00b08708, #fff0);
   }
 }
 @media only screen and (min-width: 786px) {
