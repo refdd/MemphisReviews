@@ -249,11 +249,18 @@ body {
   height: 100%;
   background: linear-gradient(to bottom right, #00b08708, #fff);
   animation: gradient 2s ease-in-out infinite;
+  animation-duration: 3s;
 }
 @keyframes gradient {
   0% {
     background-image: linear-gradient(to bottom right, #00b08708, #fff);
   }
+  50% {
+    background-image: linear-gradient(to bottom right, #00b08708, #ffffffdb);
+  }
+  /* 75% {
+    background-image: linear-gradient(to bottom right, #00b08708, #ffffff91);
+  } */
 
   100% {
     background: linear-gradient(to bottom right, #00b08708, #fff0);
