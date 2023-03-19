@@ -49,9 +49,10 @@ li {
   line-height: 82px;
   color: #f5a31b;
 }
-.rating .stars {
-  font-size: 22px;
-  color: #f5a31b;
+.rating .stars img {
+  max-width: 100%;
+  width: 32px;
+  height: 32px;
 }
 .rating .reviesNumber {
   font-family: "Roboto";
@@ -332,7 +333,7 @@ li {
     font-size: 14px;
     line-height: 16px;
   }
-  .rating .stars {
+  .rating .stars img {
     font-size: 26px;
   }
   .rating .reviesNumber {
