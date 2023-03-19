@@ -140,9 +140,10 @@ body {
   transition: background var(--duration) var(--easing);
   border: 3px solid #fff;
 }
-.imgMail i {
-  font-size: 106px;
-  color: #00b087;
+.imgMail img {
+  max-width: 100%;
+  width: 70px;
+  height: 70px;
 }
 .checkbox .icon::after {
   border: 3px solid transparent;
