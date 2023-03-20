@@ -380,4 +380,15 @@ li {
   .splide__arrow--next {
     right: -2em;
   }
+  .cardRevews .desc {
+    width: 731px;
+  }
+  .cardRevews .desc span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3d3d3d;
+  }
 }
